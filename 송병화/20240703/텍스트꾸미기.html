@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 꾸미기</title>
+    <style>
+        /* 웹폰트 CDN */
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+        body {
+            font-family: "Nanum Myeongjo", serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: mistyrose;
+        }
+
+
+        h3 {
+            text-align: right;
+            /*오른쪽 정렬*/
+        }
+
+        span {
+            text-decoration: line-through;
+            /*중간 줄*/
+        }
+
+        strong {
+            text-decoration: overline;
+            /*윗 줄*/
+        }
+
+        p {
+            color: blue;
+        }
+
+        .p1 {
+            text-indent: 3em;
+            /*3글자 들여쓰기*/
+            font-size: 2em;
+            /*글자 크기 단위*/
+            text-align: justify;
+            /*양쪽 정렬*/
+            color: orange;
+            /* 덮어쓴다 : 스타일의 중첩 168쪽, 우선순위가 높다 */
+            /* CSS3 cascading Style Sheet 폭포수 */
+        }
+
+        .p2 {
+            text-indent: 1em;
+            text-align: center;
+            border: 1px solid red;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>텍스트 꾸미기 179쪽</h3>
+    <hr>
+    <p class="p1">HTML 태그만으로 기존의 워드 프로세서와 같이 들여쓰기, 정렬, 공백, 간격 등과 세밀한 <span>텍스트 제어</span>를 할 수 없다.</p>
+    <p class="p2" style="color: aqua;">그러나, <strong>스타일 시트</strong>는 이를 가능하게 한다. 들여쓰기, 정렬에 대해서 알아본다</p>
+    <a href="http://www.naver.com" target="_blank">밑줄이 있는 네이버 링크</a>
+</body>
+
+</html>
