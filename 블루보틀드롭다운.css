@@ -69,7 +69,7 @@ nav > ul > li > ul > li:hover {
 }
 
 main{
-    background-image: url(../images/블루보틀.webp);
+    background-image: url(블루보틀.webp);
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
