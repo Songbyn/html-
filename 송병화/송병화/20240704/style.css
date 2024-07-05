@@ -1,0 +1,93 @@
+header {
+    background-color: white;
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+.logo img {
+    width: 60;
+    margin-left: 3;
+    vertical-align: bottom;
+    margin-right: 30px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+nav ul li {
+    display: none;
+}
+
+nav ul:hover li {
+    display: block;
+}
+
+nav  a {
+    color : gray;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+
+nav .nav-menu:hover {
+    color: #01a1dd;
+    background-color: white;
+}
+
+main{
+    background-image: url(../images/블루보틀.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+
+
+main h2 {
+    color: darkslategray;
+    position: relative;
+    left: 40px;
+    top: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ment {
+    color: darkslategray;
+    position: relative;
+    left: 40px;
+    top: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+button {
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    background-color: #01a1dd;
+    color: whitesmoke;
+    border: 0;
+    /* width: 150px;
+    height: 50px; */
+    left: 40px;
+    top: 370px;
+    padding: 5px 24px;
+    font-weight: 400;
+}
+
+footer {
+    color: gray;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    padding: 10px 50px;
+}

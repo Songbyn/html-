@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .scalex, .scaley, .scalexy {
+            margin: 50px;
+            border: 1px solid;
+            width: 300px;
+        }
+
+        .scalex:hover {
+            transform: scale(1.2);
+            /* 마우스 오버시 오른쪽으로 50px 이동 */
+        }
+        .scaley:hover {
+            transform: scale(1.5);
+            /* 마우스 오버시 아래로 50p 이동 */
+        }
+        .scalexy:hover {
+            transform: scale(0.7);
+            /* 마우스 오버시 사선으로 이동 */
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="scalex">
+            <img src="../images/렉돌.jpg" alt="" width="300">
+        </div>
+        <div class="scaley">
+            <img src="../images/렉돌.jpg" alt="" width="300">
+        </div>
+        <div class="scalexy">
+            <img src="../images/렉돌.jpg" alt="" width="300">
+        </div>
+    </div>
+</body>
+</html>

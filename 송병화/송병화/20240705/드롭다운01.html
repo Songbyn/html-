@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드롭다운01</title>
+    <style>
+        .dropbtn {
+            list-style: none;
+            background-color: lightblue;
+            width: 200px;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+            text-align: center;
+            padding-left: 0;
+            border: 1px solid;
+        }
+
+        .dropdown-content {
+            display: none;
+            /* 안 보이게 */
+        }
+        .dropbtn:hover .dropdown-content{
+            display: block;
+            /* 보이게 */
+        }
+        .dropdown-content li a{
+            color: gray;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="dropbtn"> 드롭다운
+        <div class="dropdown-content">
+            <li><a href="#">서브메뉴1</a></li>
+            <li><a href="#">서브메뉴2</a></li>
+            <li><a href="#">서브메뉴3</a></li>
+        </div>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 1px solid;
+            background-color: lightskyblue;
+            font-size: 30px;
+            text-align: center;
+            line-height: 300px;
+            margin: 100px auto;
+            color: whitesmoke;
+        }
+
+        #wrap {
+            text-align: center;
+        }
+
+        #matrixDefault:checked~ .box{
+            transform: matrix(1,0,0,1,0,0);
+            /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()); 순서 */
+        }
+
+        #matrixScale:checked~ .box {
+            transform: matrix(1.5,0,0,1.5,0,0);
+        }
+
+        #matrixSkew:checked~ .box {
+            transform: matrix(1,1.2,0.5,1,0,0);
+        }
+
+        #matrixTranslate:checked~ .box {
+            transform: matrix(1,0,0,1,300,100);
+        }
+        
+        label, input {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        label:hover {
+            color: blue;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <input type="radio" name="matrix" id="matrixDefault" value="matrixDefault">
+        <label for="matrixDefault"> matrixDefault(초기화) </label>
+        
+        <input type="radio" name="matrix" id="matrixScale" value="matrixScale">
+        <label for="matrixScale"> matrixDefault(줌효과) </label>
+        
+        <input type="radio" name="matrix" id="matrixSkew" value="matrixSkew">
+        <label for="matrixSkew"> matrixSkew(기울기효과) </label>
+
+        <input type="radio" name="matrix" id="matrixTranslate" value="matrixTranslate">
+        <label for="matrixTranslate"> matrixTranslate(이동효과) </label>
+        <div class="box">
+            Matrix
+        </div>
+    </div>
+
+</body>
+</html>
