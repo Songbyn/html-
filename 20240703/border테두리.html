@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> border 테두리 관련 속성</title>
+    <style>
+        div {
+            border: 1px solid salmon;
+            width: 200px;
+            height: 120px;
+        }
+        .box1 {
+            border-width: 2px; /*네 방향 테두리 두께*/
+            border-color: blue; /*테두리 색상*/
+            border-style: dotted; /*테두리 스타일 - 실선*/
+            /* dashed, dotted, double, groove, inset, outset */
+        }
+        .box2 {
+            border-width: thick thin; /*상하 좌우 테두리 두께*/
+            border-color: blueviolet;
+            border-style: double;
+        }
+        .box3 {
+            border-width: 5px 20px 1px; /*상 좌우 하 두께*/
+        }
+        .box4 {
+            border-width: 10px 6px 7px 2px; /*12시(위)부터 시계방향*/
+            border-style: outset;
+            border-left-color: pink;
+            border-right-color: yellowgreen;
+            border-bottom-color: red;
+        }
+        .round1 {
+            border-top-left-radius: 20px;
+        }
+        .round2 {
+            border-radius: 50%;
+        }
+        .round3 {
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+    <div class="round1"></div>
+    <div class="round2"></div>
+    <div class="round3"></div>
+</body>
+</html>

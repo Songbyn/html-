@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contents">
+        <!-- 이미지 추가 -->
+        <form action="">
+            <ul>
+                <li>
+                    <label for="oPrice">원래 가격
+                    <input type="text" name="" id="oPrice">원</label>
+                </li>
+                <li>
+                    <label for="rate">할인율
+                    <input type="text" name="" id="rate"> % </label>
+                </li>
+                <button onclick="showPrice()">할인 가격 계산하기</button>
+            </ul>
+        </form>
+    </div>
+    <!-- 결과창 출력할 곳 -->
+    <div class="showResult">결과창</div>
+    <script>
+        function showPrice() {
+            event.preventDefault(); // 새로고침 방지
+            let oPrice = document.getElementById("oPrice").value // 원래 가격
+            // 콘솔창에 document.getElementById("oPrice").value 입력해보기
+            let rate = document.getElementById("rate").value
+            // 할인율 입력 받은 값이 얼마인지?
+            let rPrice = oPrice * (rate/100)
+            // 할인금액 = 원래가격 * (할인율/100)
+            let Result = oPrice - rPrice
+            // 최종가격 = 원래가격 - 할인금액
+            document.querySelector(".showResult").innerText = `최종 가격 : ${Result}원`
+            // innerHTMl로 결과 div 출력
+        }
+    </script>
+</body>
+
+</html>

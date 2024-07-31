@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            width: 100%;
+            text-align: center;
+        }
+
+        #form1 {
+            background-color: skyblue;
+            margin: 0 auto;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            padding: 15px 20px;
+            height: 40px;
+        }
+
+        #subject {
+            width: 300px;
+        }
+
+        #RBtn {
+            margin-left: 10px;
+        }
+
+        #itemContainer {
+            /* border: 2px solid red; */
+            width: 600px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        #itemList {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #itemList li:nth-child(2n+1) {
+            background-color: skyblue;
+            line-height: 50px;
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+        #itemList li:nth-child(2n) {
+            background-color: lightgrey;
+            line-height: 50px;
+            font-weight: bold;
+            font-size: 32px;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+        }
+        #del {
+            font-size: 20px;
+            background-color: inherit;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> &lang;오늘의 할 일 기록하기&rang;</h1>
+    <div id="container">
+        <form id="form1">
+            <input type="text" name="" id="subject" autofocus>
+            <button id="RBtn" onclick="newRegister(); return false;">추가하기</button>
+        </form>
+    </div>
+    <div id="itemContainer">
+        <ul id="itemList"></ul>
+    </div>
+
+    <script>
+        function newRegister() {
+            let newItem = document.createElement("li") // 요소 노드 추가
+            let subject = document.getElementById('subject') // 폼의 텍스트 필드
+            newItem.textContent = subject.value
+            let newBtn = document.createElement("button")
+            newBtn.setAttribute("id","del")
+            newBtn.textContent = "X"
+            // newBtn.innerText = "X";
+            newItem.appendChild(newBtn)
+            let itemList = document.getElementById('itemList')
+            itemList.insertBefore(newItem, itemList.childNodes[0])
+            subject.value = "" // 입력된 값 초기화
+
+
+            let items = document.querySelectorAll("li")
+            for (let i = 0; i < items.length; i++) {
+                items[i].addEventListener("click", function () {
+                    if (this.parentNode) { // 부모 노드가 있다면
+                        this.parentNode.removeChild(this) // 부모 노드에서 삭제
+                    }
+                })
+            }
+        }
+    </script>
+</body>
+
+</html>

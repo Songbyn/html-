@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change() {
+            let spanArray = document.getElementsByTagName("span")
+            for(let i=0; i<spanArray.length; i++) {
+                let span = spanArray[i]
+                span.style.color = "orchid"
+                span.style.fontSize = "20px"
+            }
+        }
+        // querySelectorAll()
+        // getElementsByClassName()
+        // getElementsByTagName()
+        // 위 세개는 배열로 저장된다
+    </script>
+</head>
+<body>
+    <button onclick="change()">눌러</button>
+    <hr>
+    안녕 나는 <span>딸기야</span>
+    안녕 하는 <span>사과야</span>
+</body>
+</html>

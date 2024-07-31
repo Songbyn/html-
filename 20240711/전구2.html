@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> addEventListener 사용 </p>
+    <img src="../images/강아지.webp" id="myImage" width="200px" height="200px">
+    <!-- <img src="../images/고양이.jpg" alt=""> -->
+    <button id="onBtn">켜기</button>
+    <button id="offBtn">끄기</button>
+    <script>
+        let myImage = document.getElementById('myImage')
+        let onBtn = document.getElementById('onBtn')
+        let offbtn = document.getElementById('offBtn')
+        // addEventListener 사용
+        onBtn.addEventListener("click", changePic1) // 클릭하면 함수실행
+        offBtn.addEventListener("click", changePic2)
+        function changePic1() {
+            myImage.src = "../images/고양이.jpg"
+        }
+        function changePic2() {
+            myImage.src = "../images/강아지.webp"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            margin: 0;
+            background: url(../images/우주1.jpg) no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 900px;
+        }
+
+        .firPart span{
+            color: aliceblue;
+            font-size: 50px;
+            position: absolute;
+            top: 52%;
+            right: 5%;
+            animation: moveIn 1s ;
+            animation: moveIn 1s ease-out;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+
+        @keyframes moveIn {
+            from {
+                right: -10%;
+                opacity: 0;
+            }
+            to {
+                right: 5%;
+                opacity: 0.8;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="firPart">
+            <span> pour un logiciel CRM, </span> <br>
+            <p>
+                simple, complet <br>
+                et intuitif
+            </p>
+        </div>
+
+        <pre class="secPart">
+            CRM 소프트웨어 선택하고,
+            간단하고 완전하며
+            직관적인
+        </pre>
+    </section>
+</body>
+</html>

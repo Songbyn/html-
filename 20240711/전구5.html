@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: 220px;
+        }
+    </style>
+</head>
+<body>
+    <p> if 사용 </p>
+    <img src="../images/강아지.webp" id="myImage">
+    <!-- <img src="../images/고양이.jpg" alt=""> -->
+    <button id="onBtn" onclick="light(1)">켜기</button>
+    <button id="offBtn" onclick="light(0)">끄기</button>
+
+    <script>
+        function light(sw){
+            let pic
+            if(sw == 0) {
+                pic = "../images/강아지.webp"
+            } else {
+                pic = "../images/고양이.jpg"
+            }
+            document.getElementById("myImage").src = pic
+        }
+    </script>
+</body>
+</html>

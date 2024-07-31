@@ -1,0 +1,25 @@
+생활코딩! React 리액트 프로그래밍
+생활코딩! Nodejs 노드제이에스 프로그래밍
+스프링 부트 핵심 가이드
+짧고 굵게 배우는 JSP 웹 프로그래밍과 스프링 프레임워크
+백문불여일타 Vue.js 입문
+채쌤의 Servlet & JSP 프로그래밍 핵심
+Modern Javascript deep dive
+코드로 배우는 스프링부트 웹 프로젝트
+타입스크립트
+nextjs
+nginx
+redux
+expressjs
+ajax
+postgres
+JPA MVC
+django
+톰캣
+아파치
+몽고	
+bcrypt
+mybatis
+bootstrap
+
+https://ko.javascript.info/

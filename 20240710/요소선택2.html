@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="title">자바스크립트 요소선택</h2>
+    <main>
+        <section>
+            <article>
+                <ul class="list">
+                    <li class="item1">아이템1</li>
+                    <li class="item2">아이템2</li>
+                    <li class="item3">아이템3</li>
+                    <li class="item4">아이템4</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <script>
+        const $list = document.querySelector(".list")
+        const items = $list.children // 자식 요소 선택하기
+        const item2 = document.querySelector(".item2")
+        const li = document.querySelector("li")
+        const item3 = document.querySelector(".item3")
+
+        console.log($list)
+        console.log(items) // 자식 요소 선택
+        console.log(items[0])
+        console.log(items[2])
+        console.log(item2)
+        console.log(item2.parentElement) // 부모 요소
+        // li로 부터 제일 가까운 상위 부모 요소(article) 선택하기
+        console.log(li.closest("article"))
+        // 형제 요소 선택하기
+        console.log(item3.previousElementSibling) // 이전 형제 요소
+        console.log(item3.nextElementSibling) // 다음 형제 요소
+    </script>
+</body>
+</html>

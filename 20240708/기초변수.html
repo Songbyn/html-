@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // variable 변수
+        // 문자형 변수 String
+        var a = "javascript"
+        var num = "100"
+        var tag = "<h1>String</h1>"
+        console.log(a)
+        console.log(num)
+        console.log(tag)
+        console.log(typeof (a))
+
+        document.write(a)
+        document.write(num)
+        document.write(tag) // 태그로 인식
+
+        // 숫자형 변수 Number
+        var s = 100;
+        var t = Number("500")
+        console.log(s)
+        console.log(typeof (s))
+        console.log(typeof (t))
+
+        // 변수 논리형 Boolean (참, 거짓)
+        var y = true
+        var t = 10 >= 100
+        var k = Boolean("hello")
+        // 빈 문자 외 모두 true
+        console.log(y)
+        console.log(t)
+        console.log(k)
+        var m = Boolean(0)
+        var l = Boolean(15)
+        // var k = Boolean("")
+        console.log(m)
+        console.log(l)
+
+        // null과 undefined 데이터
+        // undefined 자료가 정의(할당)되지 않았을 때 데이터 상태
+        // null 데이터 값이 유효하지 않은 상태 (값이 비어있다.)
+        // 숫자 0은 null이 아님
+
+        // typeof 어떤 자료형인지 알고 싶을때?
+        var num = 100
+        var str = "자바스크립트"
+        console.log(typeof num)
+        console.log(typeof str)
+        document.write(typeof num, "<br>") // number
+        document.write(typeof str, "<br><br><br>") // string
+    </script>
+    <script>
+        var num1 = 15
+        var num2 = 2
+        var result = num1 + num2
+        document.write(result, "<br>")
+        result = num1 - num2
+        document.write(result, "<br>")
+        result = num1 * num2
+        document.write(result, "<br>")
+        result = num1 / num2
+        document.write(result, "<br>")
+        result = num1 % num2 // 나머지
+        document.write(result, "<br>")
+
+        // 문자  결합 연산자
+        var t1 = "동해물과"
+        var t2 = "백두산이"
+        var t3 = 1234
+        var t4 = "마르고 닳도록"
+        var result = t1 + t2 + t3 + t4
+        document.write(result + '<br><br><br><br>')
+
+        // 복합 연산자 : 산술 + 대입
+        // 연산된 데이터를 변수에 저장
+        var num1 = 10
+        var num2 = 3
+        num1 += num2 // num1 = num1 + num2
+        document.write(num1, '<br>')
+        num1 -= num2 // num1 = num1 - num2
+        document.write(num1, '<br>')
+        num1 *= num2 // num1 = num1 * num2
+        document.write(num1, '<br>')
+        num1 %= num2 // num1 = num1 % num2
+        document.write(num1, '<br>')
+
+        // 복합연산자 표만들기
+        var str = "<table border='1'>"
+        str += "<tr>"
+        str += "<th>1</th>"
+        str += "<th>2</th>"
+        str += "<th>3</th><tr>"
+        document.write(str)
+
+        // 비교연산자
+        var ko = 10, mo = "10"
+
+        // == : 값이 같는지 ( ko == mo : true)
+        // === : 자료형까지 일치하는지 확인 ( ko === mo : false)
+    </script>
+
+    <h3>링크의 href에 자바스크립트 작성 263쪽</h3>
+    <hr>
+    <a href="javascript:alert('눌렀니?')">나를 눌러봐</a>
+
+    <script>
+        document.write("<h3> Welcome! </h3>")
+        document.write("2+5 <br>")
+        document.write("<mark>7입니다 </mark>")
+    </script>
+</body>
+
+</html>

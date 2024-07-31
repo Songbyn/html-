@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <p> onclick 사용 </p>
+
+    <img src="../images/강아지.webp" id="myImage">
+    <!-- <img src="../images/고양이.jpg" alt=""> -->
+    <button id="onBtn">켜기</button>
+    <button id="offBtn">끄기</button>
+
+    <script>
+        let myImage = document.getElementById('myImage')
+        let onBtn = document.getElementById('onBtn')
+        let offbtn = document.getElementById('offBtn')
+
+        onBtn.onclick = changePic1; //함수 실행
+        offBtn.onclick = changePic2; // 괄호 없음 395쪽
+        // 객체의 이벤트 리스너 프로퍼티에 리스너 등록
+        function changePic1() {
+            myImage.src = "../images/고양이.jpg"
+        }
+        function changePic2() {
+            myImage.src = "../images/강아지.webp"
+        }
+        
+    </script>
+</body>
+
+</html>

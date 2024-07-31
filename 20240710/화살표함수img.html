@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <img src="../images/강아지.webp" id="pic1">
+    <!-- <img src="../images/렉돌.jpg" alt=""> -->
+    <script>
+        const pic1 = document.querySelector("#pic1")
+        pic1.addEventListener("mouseenter", () => {
+            pic1.src = "../images/렉돌.jpg"
+        })
+        pic1.addEventListener("mouseleave", () => {
+            pic1.src = "../images/강아지.webp"
+        })
+        
+    </script>
+</body>
+</html>

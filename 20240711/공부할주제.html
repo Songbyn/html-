@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>공부할 주제</h1>
+        <p>공부할 내용을 기록해 보세요</p>
+        <form action="">
+            <input type="text" name="" id="subject" autofocus>
+            <button onclick="newRegister(); return false;">추가하기</button>
+            <!-- return false;는 버튼 기능인 submit역할을 취소함 402쪽
+                입력해주지 않으면 함수를 실행하기 전에 기본 기능을 먼저 함 
+            -->
+            <!--
+                button의 type을 button으로 지정해줘도 됨
+            -->
+            <hr>
+            <ul id="itemList"></ul>
+        </form>
+    </div>
+
+    <script>
+        function newRegister() {
+            let newItem = document.createElement("li") // 요소 노드 추가
+            let subject = document.getElementById('subject') // 폼의 텍스트 필드
+            // 텍스트 필드의 값을 텍스트 노드로 만들기 subject.value 콘솔 입력해보기
+
+            // let newText = document.createTextNode(subject.value)
+            // newItem.appendChild(newText)
+            // 텍스트 노드를 요소 노드의 자식 노드로 연결
+
+            newItem.textContent = subject.value
+
+            let itemList = document.getElementById('itemList')
+            // 웹 문서에서 부모 노드 변수로 가져오기
+
+            // itemList.appendChild(newItem)
+            // 새로 만든 요소 노드를 부모 노드에 연결
+            // appendChild() : 입력된 내용이 아래쪽에 추가된다
+
+            itemList.insertBefore(newItem, itemList.childNodes[0])
+            // 입력된 내용이 맨 위에 추가된다
+
+            subject.value="" // 입력된 값 초기화
+
+            // 입력된 모든 항목 가져오기
+            let items = document.querySelectorAll("li")
+            for(let i = 0; i<items.length; i++) {
+                items[i].addEventListener("click", function(){
+                    if(this.parentNode) { // 부모 노드가 있다면
+                        this.parentNode.removeChild(this) // 부모 노드에서 삭제
+                    }
+                })
+            }
+        }
+    </script>
+</body>
+</html>

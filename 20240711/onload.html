@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeImage() {
+            let sel = document.getElementById("sel")
+            let img = document.getElementById("myImg")
+            img.onload = function() { // 이미지 크기 출력
+                let mySpan = document.getElementById("mySpan")
+                mySpan.innerHTML = img.width + "x" + img.height
+            }
+                let index = sel.selectedIndex // 선택된 인덱스 옵션
+                img.src = sel.options[index].value
+                // 이미지 로딩 시작, 완료 후 onload 리스너 호출
+            
+        }
+    </script>
+</head>
+<body onload="changeImage()">
+    <!-- <body>태그에 onload="changeImage()" 작성하는 이유는
+        처음부터 이미지의 크기를 출력하기 위해서이다.    
+    -->
+    <h3>onload로 이미지 크기 출력</h3>
+    <hr>
+    <form action="">
+        <select name="" id="sel" onchange="changeImage()">
+            <option value="../images/강아지.webp">강아지</option>
+            <option value="../images/고양이.jpg">아숏</option>
+            <option value="../images/렉돌.jpg">렉돌</option>
+        </select>
+        <span id="mySpan">이미지 크기</span>
+    </form>
+    <p><img src="../images/강아지.webp" id="myImg"></p>
+    
+</body>
+</html>

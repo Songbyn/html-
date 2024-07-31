@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            display: inline;
+            border: dashed 2px gray;
+            padding: 0 20px;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        #result {
+            border: solid 1px;
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            position: relative;
+            left: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <!-- 함수 사용 ( 각각의 색이 인수 ) -->
+         <!-- changeBg : 함수 이름 -->
+        <li><a href="#" onclick="changeBg('green')">Green</a></li>
+        <li><a href="#" onclick="changeBg('orange')">Orange</a></li>
+        <li><a href="#" onclick="changeBg('purple')">Purple</a></li>
+    </ul>
+    <!-- 결과 창 -->
+    <div id="result"> </div>
+
+    <script>
+        // 함수 선언 부분 , 함수명(매개변수)
+        function changeBg(color) {
+            // result 변수에 id값 대입
+            let result = document.querySelector('#result')
+            result.style.backgroundColor = color
+        }
+    </script>
+</body>
+
+</html>

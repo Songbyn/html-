@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h3>클릭해보세요</h3>
+    <h5>할 일 목록</h5>
+    <ul>
+      <!-- 유니코드 엔티티 코드 -->
+      <li class="check">&check; 할 일 1</li>
+      <li class="check">&check; 할 일 1</li>
+      <li class="check">&check; 할 일 1</li>
+      <li class="check">&check; 할 일 1</li>
+      <li class="check">&check; 할 일 1</li>
+      
+      
+    </ul>
+
+    <script>
+      // All 같은 이름의 class를 모두 선택 변수 선언
+      let listB = document.querySelectorAll(".check");
+
+      for (let i = 0; i < listB.length; i++) {
+        listB[i].addEventListener("click", function () {
+          listB[i].style.color = "hotpink"
+          this.style.backgroundColor = "lightgray";
+        });
+      }
+    </script>
+  </body>
+</html>

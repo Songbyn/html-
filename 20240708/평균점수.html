@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            color: whitesmoke;
+            background-color: mediumturquoise;
+            font-size: 40px;
+            line-height: 60px;
+        }
+    </style>
+</head>
+<body>
+    국어, 수학, 영어 점수를 입력받아
+    평균 점수를 나타내세요. <br>
+    <!-- 검사 단축키 F12 또는 ctrl + shift -->
+    <script>
+        // let num = 7
+        // if (num % 2 === 0) {
+        //     console.log("짝수")
+        // } else {
+        //     console.log("홀수")
+        // }
+        let k,m,e,result
+        k = Number(prompt("국어 점수를 입력하세요.", " "))
+        m = Number(prompt("수학 점수를 입력하세요.", " "))
+        e = Number(prompt("영어 점수를 입력하세요.", " "))
+        result = (k+m+e) / 3
+        document.write("<h3>평균 점수는 ? " + result + "점입니다.</h3>")
+        if (result >= 90) { document.write("A") }
+        else if (result >= 80) {document.write("B")}
+        else if (result >= 70) {document.write("C")}
+        else if (result >= 60) {document.write("D")}
+        else if (result >= 50) {document.write("E")}
+        else {document.write("F")}
+    </script>
+</body>
+</html>

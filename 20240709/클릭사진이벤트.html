@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #desc {
+            /* display: none; */
+            visibility: hidden;
+        }
+    </style>
+    <script>
+        function showDetail() {
+            document.getElementById('desc').style.visibility = "visible"
+        }
+        function hideDetail() {
+            document.querySelector('#desc').style.visibility = "hidden"
+        }
+    </script>
+</head>
+
+<body>
+    <div id="item">
+        <img src="../images/고양이.jpg" width="300">
+        <button onclick="showDetail()"> 상세 설명 보기 </button>
+        <div id="desc">
+            <h4>아메리칸 숏헤어</h4>
+            <p>미국의 도메스틱 캣(domestic cat), 
+                즉 토종 고양이가 페르시안이나 샤미즈 같은 다른 품종과
+                특성이 섞이기 시작하자 원래 모습을 보존하기를 원하는 
+                사람들의 노력에 의해서 1960년대에 품종으로 
+                분류되었다고 한다. 이주선에 쥐잡이 용으로 태웠던 
+                고양이가 기원이 되었으며, 영국에서 건너간 것이니 
+                브리티시 쇼트헤어였을 것으로 보고 있다. 
+                그 외에 혈통 보존의 노력이 기울여지기 전에 페르시안이나
+                샴, 메인쿤 등의 혈통이 섞였다고 본다.</p>
+            <button onclick="hideDetail()">상세 설명 닫기</button>
+        </div>
+    </div>
+</body>
+</html>

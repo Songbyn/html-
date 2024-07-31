@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 150px;
+            height: 150px;
+            background-color: palevioletred;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        // 이벤트 리스너 261쪽. 393쪽~
+        // mouseover와 mouseout으로 변경해서 실행해보기 411
+        /* addEventListener
+        add인 이유는 여러 개의 리스터를 중복할수 있다 397
+        */
+        const $box = document.querySelector("#box")
+        // 마우스 올리면 
+        $box.addEventListener("mouseenter", () => {
+            $box.style.backgroundColor = "pink"
+            // 이미지변수 선언 id로
+            // 이미지변수.src = "이미지 경로"
+        })
+        // 마우스 벗어나면
+        $box.addEventListener("mouseleave", () => {
+            $box.style.backgroundColor = "powderblue"
+        })
+    </script>
+</body>
+</html>

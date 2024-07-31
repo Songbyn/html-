@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            border: 1px solid;
+            width: 1200px;
+            height: 900px;
+            display: flex;
+            justify-content: space-between;
+        }
+        main {
+            border: 1px solid;
+            /* width: 900px; */
+            height: 900px;
+            
+
+        }
+        aside {
+            border: 1px solid;
+            width: 300px;
+            height: 900px;
+        }
+        img {
+         width: 200px;
+         height: 200px;
+        }
+
+        table {
+            border: 3px solid blue;
+        }
+
+        td {
+            width: 200px;
+            height: 250px;
+            border: 2px solid red;
+            padding: 0px 10px;
+            vertical-align: top;
+        }
+        div {
+            width: 100%;
+            border: 3px solid blue;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        #order {
+            cursor: pointer;
+            width: 100%;
+            line-height: 30px;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: black;
+            color: whitesmoke;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <main>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="../images/강아지.webp" alt="">
+                            <div>
+                                <button id="order">주문하기</button>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="../images/고양이.jpg" alt="">
+                        </td>
+                        <td>
+                            <img src="../images/루피1.jpg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>아</td>
+                        <td>아</td>
+                        <td>아</td>
+                    </tr>
+                    <tr>
+                        <td>아</td>
+                        <td>아</td>
+                        <td>아</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </main>
+        <aside id="orderTable">
+            
+        </aside>
+    </section>
+    <script>
+        let order = document.querySelector("#order")
+        let orderTable = document.querySelector("#orderTable")
+        order.addEventListener("click", () => {
+            let newP = document.createElement("div")
+            // let textNode = document.createTextNode("강아지 주문")
+            // newP.appendChild(textNode)
+            newP.textContent = "강아지 주문";
+            newP.style.backgroundColor = "black"
+            newP.style.color = "white"
+            newP.style.fontSize = "30px"
+            // setAttribute 메서드는 HTML 속성만 변경 가능
+            // css 속성은 적용 안됨
+            // newP.setAttribute("background-color","black")
+            // newP.setAttribute("font-size","30px")
+            // newP.setAttribute("color","white")
+            // newP.setAttribute("padding","10px")
+            // 위에는 잘못된 코드
+            orderTable.appendChild(newP)
+            newP.onclick = () => {
+                this.remove()
+            }
+            
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1부터 5까지 더하기
+        let sum = 0;
+        for(let i = 1; i <= 5; i++) {
+            sum += i;
+            // sum = sum + i
+        }
+        document.write(`1부터 5까지 합 ${sum}입니다`)
+        // `(1 왼쪽 기호)로 감싸고 ${}를 사용해 문자와 변수 출력
+        for(let j = 0; j < 5; j++) {
+            document.write("<br>Hello")
+        }
+        document.write("<br>")
+        let sumfor = 0
+        for(let k = 1; k <= 1000; k++) {
+            sumfor += k
+        }
+        document.write(`1부터 1000까지 더하기 ${sumfor} <br>`)
+
+        let sumEven = 0;
+        for(let jj = 2; jj <= 10; jj+=2) {
+            sumEven += jj;
+        }
+        document.write(`1부터 10까지 짝수만 더하기 ${sumEven}`)
+        // a++ , a += 1, a = a+1
+    </script>
+</body>
+</html>

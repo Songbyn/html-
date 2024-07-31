@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HF 따라하기</title>
+    <style>
+        section {
+            border: 1px solid lightgray;
+            height: 100vh;
+            background-color: lightgray;
+        }
+
+        header {
+            /* border: 1px solid; */
+            text-align: center;
+            line-height: 50px;
+            font-size: 2em;
+            font-weight: 500;
+            color: darkblue;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 100px;
+        }
+
+        .boxgroup {
+            /* border: 1px solid red; */
+            /* background-color: lightgray; */
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            /* align-items: center; */
+
+        }
+
+        .box {
+            /* border: 1px solid; */
+            width: 300px;
+            height: 450px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 25px 30px;
+            transition: 0.2s linear;
+        }
+
+        .box:hover {
+            transform: scale(102%);
+            transform-origin: bottom;
+            box-shadow: 10px 10px 20px gray;
+        }
+
+        .box2 {
+            margin: 0 80px;
+        }
+
+        .box>h3 {
+            font-size: 30px;
+            border: 1px solid;
+        }
+
+        .ment1 {
+            border: 1px solid;
+            font-size: 18px;
+            color: gray;
+        }
+
+        .box>h5 {
+            /* border: 1px solid; */
+            color: darkblue;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .ment2 {
+            /* border: 1px solid; */
+            color: darkblue;
+            font-weight: 900;
+            font-size: 35px;
+        }
+
+        .mentdiv {
+            height: 60%;
+        }
+
+        .imgdiv {
+            height: 40%;
+        }
+
+        .img1 {
+            /* border: 1px solid; */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .m1 {
+            font-size: 28px;
+            /* font-size: 30px; */
+            font-weight: 700;
+            /* border: 1px solid; */
+        }
+
+        .m2 {
+            /* border: 1px solid; */
+            font-size: 18px;
+            color: gray;
+            margin-top: 50px;
+        }
+
+        .m3 {
+            /* border: 1px solid; */
+            color: darkblue;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .m4 {
+            /* border: 1px solid; */
+            color: darkblue;
+            font-weight: 900;
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <p>국민과 함께 성장하는 <b>글로벌 주택금융 리더</b></p>
+        </header>
+
+        <body>
+            <div class="boxgroup">
+                <div class="box">
+                    <div class="mentdiv">
+                        <p><span class="m1">아낌e-보금자리론</span><br><br>
+                            <span class="m2">0.1%p 더 저렴한 금리</span>
+                        </p>
+                        <p><span class="m3">최대</span> <br>
+                            <span class="m4">주택가격 6억원</span>
+                        </p>
+                    </div>
+                    <div class="imgdiv">
+                        <img class="img1" src="../images/한국주택.png" alt="">
+                    </div>
+
+                </div>
+                <div class="box box2">
+                    <div class="mentdiv">
+                        <p><span class="m1">u-보금자리론</span><br><br>
+                            <span class="m2">우리 가족의 소중한 보금자리 마련</span>
+                        </p>
+                        <p><span class="m3">최대</span> <br>
+                            <span class="m4">대출한도 3.6억원</span>
+                        </p>
+                    </div>
+                    <div class="imgdiv">
+                        <img class="img1" src="../images/한국주택.png" alt="">
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="mentdiv">
+                        <p><span class="m1">내집마련 디딤돌</span><br><br>
+                            <span class="m2">내 집 마련 꿈의 실현</span>
+                        </p>
+                        <p><span class="m3">무주택 세대주 대상</span> <br>
+                            <span class="m4">저금리 <br>주택구입자금 대출</span>
+                        </p>
+                    </div>
+                    <div class="imgdiv">
+                        <img class="img1" src="../images/한국주택.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </body>
+    </section>
+</body>
+
+</html>
